@@ -406,7 +406,7 @@
  *   998 : Dummy Table that ALWAYS reads 25°C or the temperature defined below.
  *   999 : Dummy Table that ALWAYS reads 100°C or the temperature defined below.
  */
-#define TEMP_SENSOR_0 -1
+#define TEMP_SENSOR_0 -1 // https://community.ultimaker.com/topic/22444-step-by-step-installation-of-e3d-v6-on-umo/
 #define TEMP_SENSOR_1 0
 #define TEMP_SENSOR_2 0
 #define TEMP_SENSOR_3 0
@@ -737,8 +737,8 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 78.7402, 78.7402, 200.0*8/3, 760*1.1 }  // default steps per unit for Ultimaker
-
+//#define DEFAULT_AXIS_STEPS_PER_UNIT   { 78.7402, 78.7402, 200.0*8/3, 760*1.1 }  // default steps per unit for Ultimaker
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 200.0*8/3, 760*1.1 }  // Ultimaker  GT2
 /**
  * Default Max Feed Rate (mm/s)
  * Override with M203
